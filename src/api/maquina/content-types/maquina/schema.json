@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maquinas",
+  "info": {
+    "singularName": "maquina",
+    "pluralName": "maquinas",
+    "displayName": "Maquina"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "marca": {
+      "type": "string",
+      "required": true
+    },
+    "modelo": {
+      "type": "string",
+      "required": true
+    },
+    "interno": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
